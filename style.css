@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  max-width: 50vmax;
+  max-width: 30vmax;
   height: auto;
   display: flex;
   flex-direction: column;
