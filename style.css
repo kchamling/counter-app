@@ -1,5 +1,134 @@
 * {
-margin : 0;
-padding : 0;
-box-sizing : border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 62.5%;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #005fcc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#heading {
+  padding: 0.8rem 0 0 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #fff;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter .count {
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.counter-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.change-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.change-by label {
+  font-size: 1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.change-by input {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  border: 1px solid #000;
+  padding-left: 0.8rem;
+  margin-left: 0.7rem;
+}
+
+.btn {
+  width: 5rem;
+  height: 2rem;
+  background-color: #000a14;
+  color: #fff;
+  display: inline-block;
+  border: none;
+}
+
+.btn-primary {
+  width: 2rem;
+  height: auto;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.3rem 0.7rem;
+  margin: 1rem 0 2rem 0rem;
+}
+
+.btn-secondary {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0 2rem 0;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 700px) {
+  #heading {
+    font-size: 1.3rem;
+  }
+  .count {
+    font-size: 0.7rem;
+  }
+  .btn-primary {
+    width: 1.5rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .btn-secondary {
+    width: 2.5rem;
+    height: auto;
+    font-weight: 400;
+    font-size: 0.5rem;
+    padding: 8px 38px 10px 20px;
+  }
+  .change-by label {
+    font-size: 0.8rem;
+    margin-right: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
+  }
 }
