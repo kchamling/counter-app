@@ -4,30 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Counter</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <h1 id="heading">Counter</h1>
-      <div class="counter">
-        <p class="count">0</p>
-        <div class="counter-controls">
-          <button class="btn btn-primary" id="plusBtn">+</button>
-          <button class="btn btn-primary" id="minusBtn">-</button>
-        </div>
-
-        <div class="change-by">
-          <label for="changeBy">Increment/Decrement by:</label>
-          <input type="number" value="1" id="changeBy" min="1" max="10" />
-        </div>
-        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+    <section id="container">
+      <h1>Counter</h1>
+      <div class="count-container">
+        <p id="count"></p>
       </div>
-    </div>
-    <script src="app.js"></script>
+      <div class="button-controls">
+        <button id="plus-btn" class="btn">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button id="minus-btn" class="btn">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+      <div class="change-by">
+        <p>Increment / Decrement by:</p>
+        <input type="number" name="" id="" max="10" min="1" />
+      </div>
+      <button type="reset" id="reset-btn" class="btn">Reset</button>
+    </section>
   </body>
 </html>

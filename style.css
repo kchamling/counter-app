@@ -4,137 +4,67 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: 62.5%;
+body {
+  font-size: 62.5%;
   font-family: "Nunito", sans-serif;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(43, 43, 203, 1) 42%,
-    rgba(0, 212, 255, 1) 100%
-  );
+#container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  gap: 0.5rem;
+
+  max-width: 1000px;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
-#heading {
-  padding: 0.8rem 0 0 0;
-  font-size: 1.8rem;
+h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.count-container p {
+  font-size: 3rem;
   font-weight: 700;
 }
 
-.container {
-  max-width: 30vmax;
-  height: auto;
+.button-controls {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.3) inset;
-  border: none;
+  gap: 0.5rem;
+}
+
+.btn {
+  width: 2.9rem;
+  height: 1.7rem;
   border-radius: 0.3rem;
-  background-color: #fff;
-}
+  border: none;
+  cursor: pointer;
 
-.counter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.counter .count {
-  margin-top: 0.5rem;
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-
-.counter-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.7rem;
+  background-color: yellowgreen;
+  border: 1px solid black;
 }
 
 .change-by {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
-.change-by label {
-  font-size: 1rem;
+.change-by p {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+#reset-btn {
+  font-size: 0.7rem;
   font-weight: 600;
-  flex-shrink: 0;
-}
-
-.change-by input {
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
-  border: 1px solid #000;
-  padding-left: 0.8rem;
-  margin-left: 0.7rem;
-}
-
-.btn {
-  width: 5rem;
-  height: 2rem;
-  background-color: #000a14;
-  color: #fff;
-  display: inline-block;
-  border: none;
-}
-
-.btn-primary {
-  width: 2rem;
-  height: auto;
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding: 0.3rem 0.7rem;
-  margin: 1rem 0 2rem 0rem;
-}
-
-.btn-secondary {
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 1rem 0 2rem 0;
-  border: none;
-  border-radius: 0.3rem;
-}
-
-@media screen and (max-width: 700px) {
-  #heading {
-    font-size: 1.3rem;
-  }
-  .count {
-    font-size: 0.7rem;
-  }
-  .btn-primary {
-    width: 1.5rem;
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
-  }
-  .btn-secondary {
-    width: 2.5rem;
-    height: auto;
-    font-weight: 400;
-    font-size: 0.5rem;
-    padding: 8px 38px 10px 20px;
-  }
-  .change-by label {
-    font-size: 0.8rem;
-    margin-right: 1.5rem 1.5rem;
-    padding: 1rem 1rem;
-  }
+  width: 3.5rem;
+  height: 1.6rem;
 }
